@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mood } from '../types';
+import { Mood } from '../types.ts';
 
 interface MoodSelectorProps {
   onSelectMood: (mood: Mood) => void;
@@ -16,7 +16,7 @@ export const MoodSelector: React.FC<MoodSelectorProps> = ({ onSelectMood }) => {
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-4xl">
         <button
           onClick={() => onSelectMood('happy')}
-          className="group relative bg-white hover:bg-pink-50 text-pink-600 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(244,143,177)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-200 text-xl flex flex-col items-center gap-2"
+          className="group relative bg-white hover:bg-pink-50 text-pink-600 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(244,143,177)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-200 text-xl flex flex-col items-center gap-2 pointer-events-auto"
         >
           <span className="text-4xl group-hover:scale-125 transition-transform">✨</span>
           Je vais bien !
@@ -24,7 +24,7 @@ export const MoodSelector: React.FC<MoodSelectorProps> = ({ onSelectMood }) => {
 
         <button
           onClick={() => onSelectMood('neutral')}
-          className="group relative bg-white hover:bg-pink-50 text-pink-500 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(248,187,208)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-100 text-xl flex flex-col items-center gap-2"
+          className="group relative bg-white hover:bg-pink-50 text-pink-500 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(248,187,208)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-100 text-xl flex flex-col items-center gap-2 pointer-events-auto"
         >
           <span className="text-4xl group-hover:scale-125 transition-transform">🌸</span>
           Couci-couça
@@ -32,7 +32,7 @@ export const MoodSelector: React.FC<MoodSelectorProps> = ({ onSelectMood }) => {
 
         <button
           onClick={() => onSelectMood('sad')}
-          className="group relative bg-white hover:bg-pink-50 text-pink-400 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(252,228,236)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-50 text-xl flex flex-col items-center gap-2"
+          className="group relative bg-white hover:bg-pink-50 text-pink-400 font-bold py-6 px-8 rounded-3xl shadow-[0_8px_0_rgb(252,228,236)] active:shadow-none active:translate-y-2 transition-all border-4 border-pink-50 text-xl flex flex-col items-center gap-2 pointer-events-auto"
         >
           <span className="text-4xl group-hover:scale-125 transition-transform">🥺</span>
           Pas très bien...

@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { Mood } from './types';
-import { KawaiiCat } from './components/KawaiiCat';
-import { MoodSelector } from './components/MoodSelector';
-import { QuoteDisplay } from './components/QuoteDisplay';
+import { Mood } from './types.ts';
+import { KawaiiCat } from './components/KawaiiCat.tsx';
+import { MoodSelector } from './components/MoodSelector.tsx';
+import { QuoteDisplay } from './components/QuoteDisplay.tsx';
 
 const App: React.FC = () => {
   const [selectedMood, setSelectedMood] = useState<Mood>(null);
@@ -53,7 +53,7 @@ const App: React.FC = () => {
             href="https://github.com/Souf-F" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="hover:text-pink-500 transition-colors underline decoration-dotted"
+            className="hover:text-pink-500 transition-colors underline decoration-dotted pointer-events-auto"
           >
             Souf-F
           </a>
