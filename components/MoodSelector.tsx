@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mood } from '../types.ts';
+import { Mood } from '../types';
 
 interface MoodSelectorProps {
   onSelectMood: (mood: Mood) => void;

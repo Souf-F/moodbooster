@@ -1,9 +1,9 @@
 
 import React, { useState, useEffect } from 'react';
-import { Mood } from './types.ts';
-import { KawaiiCat } from './components/KawaiiCat.tsx';
-import { MoodSelector } from './components/MoodSelector.tsx';
-import { QuoteDisplay } from './components/QuoteDisplay.tsx';
+import { Mood } from './types';
+import { KawaiiCat } from './components/KawaiiCat';
+import { MoodSelector } from './components/MoodSelector';
+import { QuoteDisplay } from './components/QuoteDisplay';
 
 const App: React.FC = () => {
   const [selectedMood, setSelectedMood] = useState<Mood>(null);

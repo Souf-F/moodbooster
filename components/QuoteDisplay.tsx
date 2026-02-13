@@ -1,7 +1,7 @@
 
 import React, { useMemo } from 'react';
-import { Mood } from '../types.ts';
-import { HAPPY_QUOTES, NEUTRAL_QUOTES, SAD_QUOTES } from '../constants/quotes.ts';
+import { Mood } from '../types';
+import { HAPPY_QUOTES, NEUTRAL_QUOTES, SAD_QUOTES } from '../constants/quotes';
 
 interface QuoteDisplayProps {
   mood: Mood;
